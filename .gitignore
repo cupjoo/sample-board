@@ -1,0 +1,6 @@
+# IntelliJ project files
+.idea
+.gradle
+
+# Spring Boot build files
+build
