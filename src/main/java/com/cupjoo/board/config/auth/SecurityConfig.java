@@ -20,10 +20,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .authorizeRequests()
                     .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**", "/profile")
-                        .permitAll()
+                        .permitAll()    // 전체 열람 권한
                     .antMatchers("/api/v1/**")
                         .hasRole(Role.USER.name())
-                    .anyRequest()
+                    .anyRequest()   // 그 외 링크의 경우 인증된 (로그인 한) 사용자만 접근 가능
                         .authenticated()
                 .and()
                     .logout()
