@@ -1,4 +1,4 @@
-# Sample Board
+# Spring Board
 Simple Board Site with Spring Boot.
 
 ## Prerequisites

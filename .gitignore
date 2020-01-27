@@ -4,3 +4,6 @@
 
 # Spring Boot build files
 build
+
+# OAuth Client
+application-oauth.yml
