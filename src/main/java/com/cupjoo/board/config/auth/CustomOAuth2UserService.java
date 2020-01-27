@@ -31,6 +31,10 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
 
         // check which services are currently logged in
         String registrationId = userRequest.getClientRegistration().getRegistrationId();
+        /* unique key that the SNS passes to each account
+           naver: id
+           google: sub
+        * */
         String userNameAttributeName = userRequest.getClientRegistration().getProviderDetails()
                 .getUserInfoEndpoint().getUserNameAttributeName();
 
